@@ -1,0 +1,56 @@
+
+---
+    import Index from "../lib/components/Index.svelte";
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href={Astro.resolve("../styles/global.css")}>
+</head>
+<body>
+<main class="bg-gray-800 w-screen h-screen">
+    <Index client:visible />
+</main>
+</body>
+</html>
+
+<style global lang="postcss">
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+    * {
+        font-family: Ubuntu, sans-serif;
+    }
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 6px;
+        background: transparent;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        @apply bg-accent;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(61, 143, 246, 0.8);
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background: transparent;
+    }
+</style>

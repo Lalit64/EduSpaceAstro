@@ -1,0 +1,22 @@
+{
+  "name": "@example/framework-svelte",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^0.22.18",
+    "tailwindcss": "^3.0.16"
+  },
+  "dependencies": {
+    "@beyonk/svelte-carousel": "^2.9.0",
+    "@supabase/supabase-js": "^1.29.4",
+    "axios": "^0.25.0",
+    "supabase": "^0.5.0",
+    "svelte": "^3.46.2"
+  }
+}
