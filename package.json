@@ -9,12 +9,13 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@beyonk/svelte-carousel": "^2.9.0",
     "astro": "^0.22.18",
     "tailwindcss": "^3.0.16"
   },
   "dependencies": {
-    "@beyonk/svelte-carousel": "^2.9.0",
     "@supabase/supabase-js": "^1.29.4",
+    "autoprefixer": "^10.4.2",
     "axios": "^0.25.0",
     "supabase": "^0.5.0",
     "svelte": "^3.46.2"

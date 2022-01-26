@@ -11,7 +11,11 @@ module.exports = {
             colors: {
                 accent: '#3D8FF6',
                 body: "#10254E"
-            }
+            },
+        },
+        screens: {
+            sm: '640px',
+            md: "820px"
         }
     }
 };

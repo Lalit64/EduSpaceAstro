@@ -6,12 +6,13 @@ import Navbar from '../lib/components/Navbar.svelte';
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="/graphics/Logo.svg"/>
+    <link rel="mask-icon" href="/graphics/Logo.svg" color="#3D8FF6">
     <link rel="stylesheet" href={Astro.resolve("../styles/global.css")}>
 </head>
 <body>
 <main class="w-screen h-screen dark:bg-gray-800 text-body dark:text-white">
-    <Navbar action={true} />
+    <Navbar action={true} client:visible />
     <div class="p-4">
         Coming Soon...
     </div>
