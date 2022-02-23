@@ -24,9 +24,9 @@
     let sidebar = false
 </script>
 
-<div class="w-full sticky top-0 z-50 backdrop-blur dark:bg-gray-800 dark:text-white text-body">
+<div class="w-full sticky top-0 z-50 backdrop-blur dark:bg-gray-800  dark:text-white text-body">
     <div class="nav w-full sticky h-16 top-0 z-50 flex justify-center shadow-md z-50">
-        <div class="flex items-center justify-between w-full md:w-1/2 min-w-[550px] px-6 md:px-0 z-50">
+        <div class="flex items-center justify-between w-full md:w-1/2 min-w-[0px] px-6 md:px-0 z-50">
             <div class="h-full md:w-1/2 flex items-center justify-between dark:text-white text-body">
                 <a class="font-bold flex text-xl" href="/">
                     <img src="/graphics/Logo.svg" alt="" class="w-7 mr-2"/> EduSpace
@@ -92,7 +92,7 @@
     </div>
     {#if sidebar}
         <div class="block md:hidden">
-            <div class="fixed top-16 right-0 w-4/5 h-full p-8 dark:bg-gray-900 shadow-lg bg-gray-200 transition duration-500 z-50 flex flex-col items-center"
+            <div class="nav-res fixed top-16 right-0 w-4/5 p-8 dark:bg-gray-900 bg-gray-200 transition duration-500 z-50 flex flex-col items-center"
                  transition:fly={{ x: 500 }}>
                 <div class="w-full flex flex-col">
                     <div class="m-3">
@@ -191,5 +191,9 @@
 
     button {
         white-space: nowrap;
+    }
+
+    .nav-res {
+        height: calc(100vh - 64px);
     }
 </style>
