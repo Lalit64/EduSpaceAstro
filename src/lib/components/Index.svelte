@@ -26,7 +26,7 @@
     <div class="flex items-center flex-col dark:bg-gray-800">
 
         {#if $user}
-            <Svroller width="100vw" height="100vh">
+            <Svroller width="100vw" height="100vh" hideAfter={5000}>
                 <Navbar home={true} action={false} about={false}/>
                 <main class="flex flex-col items-center w-screen h-auto dark:bg-gray-800">
                     <Trending/>
