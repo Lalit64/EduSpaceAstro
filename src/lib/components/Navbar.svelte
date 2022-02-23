@@ -24,7 +24,7 @@
     let sidebar = false
 </script>
 
-<div class="w-full sticky top-0 z-50 backdrop-blur dark:bg-gray-800  dark:text-white text-body">
+<div class="w-full sticky top-0 z-50 backdrop-blur bg-white dark:bg-gray-800 dark:text-white text-body">
     <div class="nav w-full sticky h-16 top-0 z-50 flex justify-center shadow-md z-50">
         <div class="flex items-center justify-between w-full md:w-1/2 min-w-[0px] px-6 md:px-0 z-50">
             <div class="h-full md:w-1/2 flex items-center justify-between dark:text-white text-body">
